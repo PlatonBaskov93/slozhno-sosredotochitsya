@@ -101,7 +101,8 @@
 
 .header__theme-menu {
   justify-self: end;
-  margin-block-start: 62px;
+  margin-block-start: 65px;
+  margin-block-end: 10px;
 }
 
 .header__theme-menu-list {
@@ -146,6 +147,7 @@
   color: var(--main-title-color);
   font-weight: 700;
   line-height: 0.825;
+
 }
 
 .header__description {
@@ -154,6 +156,7 @@
   font-size: inherit;
   line-height: inherit;
   background-color: var(--main-accent-color);
+
 }
 
 .main {
