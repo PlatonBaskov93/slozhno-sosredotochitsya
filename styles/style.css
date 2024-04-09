@@ -225,6 +225,11 @@
   padding: 10px;
   place-items: center;
   min-block-size: 100vh;
+  
+}
+
+.footer .shadow-effect {
+  text-shadow: 2px 2px 0 var(--main-accent-color);
 }
 
 @media (width >= 768px) {
