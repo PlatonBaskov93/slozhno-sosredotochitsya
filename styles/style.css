@@ -101,8 +101,7 @@
 
 .header__theme-menu {
   justify-self: end;
-  margin-block-start: 60px;
-  margin-block-end: 63px;
+  margin-block-start: 65px;
 }
 
 .header__theme-menu-list {
@@ -111,7 +110,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -149,8 +148,6 @@
 }
 
 .header__description {
-  margin-block-start: 55px;
-  margin-block-end: 56px;
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: inherit;
@@ -163,7 +160,7 @@
   /* зазор между секциями */
   gap: 50px;
   /* отступ первой секции от хедера + боковые отступы */
-  padding: 40px 10px;
+  padding: 30px 10px 40px;
 }
 
 .title {
