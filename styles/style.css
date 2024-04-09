@@ -20,7 +20,7 @@
   background-image: var(--bg-image);
   background-position: center;
   background-size: cover;
-  min-block-size: 100vh;
+
 }
 
 .header::before,
@@ -95,7 +95,8 @@
 
 .header__theme-menu {
   justify-self: end;
-  margin-block: 65px;
+  margin-block-start: 60px;
+  margin-block-end: 63px;
 }
 
 .header__theme-menu-list {
@@ -143,7 +144,7 @@
 
 .header__description {
   margin-block-start: 55px;
-  margin-block-end: 65px;
+  margin-block-end: 56px;
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: inherit;
@@ -156,7 +157,7 @@
   /* зазор между секциями */
   gap: 50px;
   /* отступ первой секции от хедера + боковые отступы */
-  padding: 40px 10px;
+  padding: 41px 10px;
 }
 
 .title {
@@ -212,10 +213,40 @@
   position: relative;
   padding: 10px;
   place-items: center;
-  min-block-size: 100vh;
+min-block-size: 667px;
 }
 
 @media (width >= 768px) {
+
+  .header {
+    padding: 20px;
+    padding-inline-start: 0;
+  }
+
+  .header::before,
+  .footer::before {
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+  }
+
+  .header::after,
+  .footer::after {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+  }
+
+  .header__theme-menu {
+    margin-block-start: 169px;
+    margin-block-end: 173px;
+  }
+
+  .header__description {
+    justify-self: end;
+    inline-size: 364px;
+    margin-block-start: 158px;
+    margin-block-end: 163px;
+  }
+
   .header__decorative-element {
     inset-block-start: 20px;
     inset-inline-end: 29px;
@@ -226,8 +257,8 @@
   }
 
   .section {
-    /*чтобы занять примерно треть но не больше-меньше чем в дизайне*/
-    grid-template-columns: clamp(236px, calc(100% / 3), 315px) 1fr;
+    /*чтобы занять примерно треть но не больше-меньше чем в дизайне 3.25 - подгон по перфект-пикселю*/
+    grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr;
   }
 
   .what-section__article-list {
@@ -258,38 +289,14 @@
     grid-row-start: span 2;
   }
 
-  .header {
-    padding-inline-start: 0;
-  }
-
-  .header::before,
-  .footer::before {
-    inset-block-start: 20px;
-    inset-inline-end: 20px;
-  }
-
-  .header::after,
-  .footer::after {
-    inset-inline-start: 20px;
-    inset-block-end: 20px;
-  }
-
-  .header__theme-menu {
-    margin-block-start: 170px;
-    margin-block-end: 70px;
-  }
-
-  .header__description {
-    justify-self: end;
-    inline-size: 364px;
-    margin-block-start: 162px;
-    margin-block-end: 183px;
-  }
 
   .main {
     gap: 80px;
     padding: 60px 20px;
   }
+  .footer {
+  min-block-size: 1026px;
+}
 }
 
 @media (width >= 1024px) {
@@ -301,15 +308,12 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .header {
-    padding: 20px;
-  }
 
   .header__theme-menu {
     justify-self: center;
     margin-inline-start: 20px;
     margin-block-start: 0;
-    margin-block-end: 215px;
+    margin-block-end: 272px;
   }
 
   .header__theme-menu-list {
@@ -317,8 +321,10 @@
   }
 
   .header__description {
-    margin-block-start: 114px;
-    margin-block-end: 134px;
+    margin-block: 114px;
     inline-size: 491px;
   }
+.footer {
+  min-block-size: 770px;
+}
 }
