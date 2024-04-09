@@ -118,7 +118,8 @@
   background-color: transparent;
   font-family: "IBM Plex mono", sans-serif;
   font-size: 18px;
-  padding: 1.5px 13px;
+  block-size: 26px;
+  padding: 0 13px;
   color: var(--accent-color);
   cursor: pointer;
 }
