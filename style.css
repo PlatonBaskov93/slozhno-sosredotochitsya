@@ -101,7 +101,7 @@
 
 .header__theme-menu {
   justify-self: end;
-  margin-block-start: 62px;
+  margin-block-start: 65px;
 }
 
 .header__theme-menu-list {
@@ -118,7 +118,8 @@
   background-color: transparent;
   font-family: "IBM Plex mono", sans-serif;
   font-size: 18px;
-  padding: 1.5px 13px;
+  block-size: 26px;
+  padding: 0 13px;
   color: var(--accent-color);
   cursor: pointer;
 }
@@ -145,6 +146,7 @@
   color: var(--main-title-color);
   font-weight: 700;
   line-height: 0.825;
+  margin-block-start: 65px;
 }
 
 .header__description {
@@ -153,6 +155,7 @@
   font-size: inherit;
   line-height: inherit;
   background-color: var(--main-accent-color);
+  margin-block-start: 55px;
 }
 
 .main {
