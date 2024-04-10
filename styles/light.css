@@ -11,7 +11,7 @@
   --rec-visibility: hidden;
 }
 
-@media (prefers-color-sheme: light) {
+@media (prefers-color-scheme: light) {
   :root {
     --bg-color: #FF8DCB;
     --bg-image: url('../images/cover-image-light.png');
