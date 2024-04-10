@@ -13,14 +13,14 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-color: #FF8DCB;
-    --bg-image: url('../images/cover-image-light.png');
-    --main-title-color: #DB00FF;
-    --main-accent-color: #FF8DCB;
-    --accent-color: #353430;
-    --accent-color-type-hover: rgba(255, 141, 203, .4);
-    --main-text-color: #353430;
-    --secondary-text-color: #353430;
-    --rec-visibility: hidden;
+  --bg-color: #fff1f7;
+  --bg-image: url('../images/cover-image-light.png');
+  --main-title-color: #FFC2E6;
+  --main-accent-color: #FF8DCB;
+  --accent-color: #353430;
+  --accent-color-type-hover: rgba(53, 52, 48, .4);
+  --main-text-color: #353430;
+  --secondary-text-color: #353430;
+  --rec-visibility: hidden;
   }
 }
