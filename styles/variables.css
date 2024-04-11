@@ -8,4 +8,7 @@
   --main-text-color: #F1B2CE;
   --secondary-text-color: #000028;
   --rec-visibility: visible;
+  --main-font: "IBM Plex mono", monospace;
+  --font-bold: 700;
+  --font-reg: 500;
 }
